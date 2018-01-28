@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./styles/contacts.css">
+  <title>14Four Skills Test</title>
+</head>
+<body>
+  <div class="contacts-widget-container">
+    <div class="contact-header">
+      <h3 class="contact-header-text">Contacts</h3>
+    </div>
+    <div class="contacts-list-container">
+      <ul class="contacts-list">
+        <div class="clearfix contact-container" onclick="clickContact(this)">
+          <li class="contact-row clearfix">
+            <div class="contact-left clearfix">
+              <div class="available"></div>
+              <p class="contact-name">Christian</p>
+            </div>
+            <div class="contact-right" >
+              <a href="#"  class="contact-email">christian@yahoo.com</a>
+              <div class="hidden-contact-details">
+                <p class="contact-phone">323-555-1234</p>
+                <p class="contact-details">1234 Main St.</p>
+                <p class="contact-details">Pasco WA 99301</p>
+              </div>
+            </div>
+          </li>
+        </div>
+
+        <div class="clearfix contact-container" onclick="clickContact(this)">
+          <li class="contact-row clearfix">
+            <div class="contact-left clearfix">
+              <div class="available"></div>
+              <p class="contact-name">Rich</p>
+            </div>
+            <div class="contact-right">
+              <a href="#" class="contact-email">rich@tripod.com</a>
+              <div class="hidden-contact-details">
+                <p class="contact-phone">323-555-1234</p>
+                <p class="contact-details">1234 Main St.</p>
+                <p class="contact-details">Pasco WA 99301</p>
+              </div>
+            </div>
+          </li>
+        </div>
+
+        <div class="clearfix contact-container" onclick="clickContact(this)">
+            <li class="contact-row clearfix">
+              <div class="contact-left clearfix">
+                <div class="available"></div>
+                <p class="contact-name">Scott</p>
+              </div>
+              <div class="contact-right" >
+                <a href="#"  class="contact-email">scott@mailinator.com</a>
+                <div class="hidden-contact-details">
+                  <p class="contact-phone">323-555-1234</p>
+                  <p class="contact-details">1234 Main St.</p>
+                  <p class="contact-details">Pasco WA 99301</p>
+                </div>
+              </div>
+            </li>
+          </div>
+
+          <div class="clearfix contact-container" onclick="clickContact(this)">
+            <li class="contact-row clearfix">
+              <div class="contact-left clearfix">
+                <div class="available"></div>
+                <p class="contact-name">Danny</p>
+              </div>
+              <div class="contact-right" >
+                <a href="#"  class="contact-email">danny@hotmail.com</a>
+                <div class="hidden-contact-details">
+                  <p class="contact-phone">323-555-1234</p>
+                  <p class="contact-details">1234 Main St.</p>
+                  <p class="contact-details">Pasco WA 99301</p>
+                </div>
+              </div>
+            </li>
+          </div>
+
+          <div class="clearfix contact-container" onclick="clickContact(this)">
+            <li class="contact-row clearfix">
+              <div class="contact-left clearfix">
+                <div class="busy"></div>
+                <p class="contact-name">Taka</p>
+              </div>
+              <div class="contact-right" >
+                <a href="#"  class="contact-email">taka@myspace.com</a>
+                <div class="hidden-contact-details">
+                  <p class="contact-phone">323-555-1234</p>
+                  <p class="contact-details">1234 Main St.</p>
+                  <p class="contact-details">Pasco WA 99301</p>
+                </div>
+              </div>
+            </li>
+          </div>
+
+          <div class="clearfix contact-container" onclick="clickContact(this)">
+            <li class="contact-row clearfix">
+              <div class="contact-left clearfix">
+                <div class="away"></div>
+                <p class="contact-name">Tim</p>
+              </div>
+              <div class="contact-right" >
+                <a href="#"  class="contact-email">tim@netscape.com</a>
+                <div class="hidden-contact-details">
+                  <p class="contact-phone">323-555-1234</p>
+                  <p class="contact-details">1234 Main St.</p>
+                  <p class="contact-details">Pasco WA 99301</p>
+                </div>
+              </div>
+            </li>
+          </div>
+
+          <div class="clearfix contact-container" onclick="clickContact(this)">
+            <li class="contact-row clearfix">
+              <div class="contact-left clearfix">
+                <div class="available"></div>
+                <p class="contact-name">Patrick</p>
+              </div>
+              <div class="contact-right" >
+                <a href="#"  class="contact-email">patrick@live.com</a>
+                <div class="hidden-contact-details">
+                  <p class="contact-phone">323-555-1234</p>
+                  <p class="contact-details">1234 Main St.</p>
+                  <p class="contact-details">Pasco WA 99301</p>
+                </div>
+              </div>
+            </li>
+          </div>
+
+          <div class="clearfix contact-container" onclick="clickContact(this)">
+            <li class="contact-row clearfix">
+              <div class="contact-left clearfix">
+                <div class="away"></div>
+                <p class="contact-name">Jacques</p>
+              </div>
+              <div class="contact-right" >
+                <a href="#"  class="contact-email">jacques@aol.com</a>
+                <div class="hidden-contact-details">
+                  <p class="contact-phone">323-555-1234</p>
+                  <p class="contact-details">1234 Main St.</p>
+                  <p class="contact-details">Pasco WA 99301</p>
+                </div>
+              </div>
+            </li>
+          </div>
+      </ul>
+    </div>
+
+    <div class="contact-footer">
+     <select name="select-contact-items" id="select-contact-items" onchange="selectClick(this)">
+       <option value="Email">Email address</option>
+       <option value="Phone">Phone number</option>
+     </select>
+    </div>
+  </div>
+</body>
+
+<script src="./js/contacts.js"></script>
+</html>

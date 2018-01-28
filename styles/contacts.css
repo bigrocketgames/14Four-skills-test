@@ -1,0 +1,175 @@
+.contacts-widget-container {
+  width: 400px;
+}
+
+/* Contact header area */
+
+.contact-header {
+  background: linear-gradient(#3e3e3e, #252525);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.contact-header-text {
+  color: white;
+  margin-left: 20px;
+}
+
+/* Contacts Area */
+.contact-container {
+  position: relative;
+  width: 100%;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-row {
+  justify-content: center;
+  flex-direction: column;
+  height: 40px;
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+.contacts-list .contact-container:nth-child(odd) {
+  background: #212121;
+}
+
+.contacts-list .contact-container:nth-child(even) {
+  background: #191919;
+}
+
+.contact-left {
+  height: 100%;
+  width: 33%;
+  align-self: center;
+  border-right: 2px solid #1d1d1d;
+  color: white;
+}
+
+.contact-right {
+  height: 100%;
+  width: 65%;
+  display: inline-block;
+  text-align: center;
+  text-align-last: center;
+  color: #565656;
+}
+
+.contact-right a.contact-email {
+  text-decoration: none;
+  color: #565656;
+}
+
+.available {
+  width: 1em;
+  height: 1em;
+  background: #37fe2c;
+  border-radius: 50%;
+  float: left;
+  margin: 1em 10px;
+}
+
+.away {
+  width: 1em;
+  height: 1em;
+  background: #fffc00;
+  border-radius: 50%;
+  float: left;
+  margin: 1em 10px;
+}
+
+.busy {
+  width: 1em;
+  height: 1em;
+  background: #ff0000;
+  border-radius: 50%;
+  float: left;
+  margin: 1em 10px;
+}
+
+.contact-name {
+  color: white;
+}
+
+.hidden-contact-details {
+  display: none;
+  position: absolute;
+  background: #484848;
+  width: 65%;
+  z-index: 1;
+}
+
+@keyframes contactDown {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes contactDown {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.show {
+  display: block;
+  animation: contactDown 1s ease-out forwards;
+  -webkit-animation: contactDown 1s;
+}
+
+.inactive-contact {
+  opacity: 0.3;
+}
+
+.active-contact {
+  background: #484848;
+}
+
+.active-contact .contact-right {
+  color: white;
+}
+
+.active-contact .contact-right a.contact-email {
+  text-decoration: underline;
+  color: #00f6ff;
+}
+
+
+
+
+
+/* Contact Footer area */
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #202020;
+  height: 50px;
+  border-top: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#select-contact-items {
+  flex: 0.35;
+  padding: 3px;
+  font-size: 14px;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.clearfix {
+  display: inline-table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
